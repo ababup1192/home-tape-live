@@ -1,0 +1,98 @@
+{
+  "commands": {
+    "camcorder": {
+      "params": [
+        {
+          "name": "state",
+          "pos": 1,
+          "req": true,
+          "type": "choice",
+          "values": [
+            "rec",
+            "play",
+            "off"
+          ]
+        }
+      ],
+      "summary": "今のビデオカメラの画面を出す（rec = 録画中・play = 見返し）・消す（off）"
+    },
+    "homevideo": {
+      "params": [
+        {
+          "name": "state",
+          "pos": 1,
+          "req": true,
+          "type": "choice",
+          "values": [
+            "on",
+            "off"
+          ]
+        }
+      ],
+      "summary": "ホームビデオの画面（REC の点滅・日付・走査線とノイズ）を出す（on）・消す（off）"
+    },
+    "tapeout": {
+      "params": [],
+      "summary": "砂嵐の後に青画面を出し、ホームビデオの画面を消す（秒は novel.tape.json の tapeOut）"
+    }
+  },
+  "nodeRefs": {
+    "from": [
+      {
+        "doc": "../novel.shots.json",
+        "path": "shots[].node"
+      }
+    ]
+  },
+  "nodes": {
+    "from": [
+      {
+        "doc": "../novel.story.json",
+        "path": "opening"
+      }
+    ]
+  },
+  "speakers": {
+    "from": [
+      {
+        "doc": "../novel.story.json",
+        "keys": "names"
+      }
+    ]
+  },
+  "tags": {
+    "act": [
+      "up",
+      "down",
+      "left",
+      "right",
+      "tap"
+    ],
+    "at": {
+      "from": [
+        {
+          "doc": "../novel.prompts.json",
+          "keys": "targets"
+        }
+      ]
+    },
+    "icon": {
+      "from": [
+        {
+          "doc": "../novel.prompts.json",
+          "keys": "icons"
+        }
+      ]
+    },
+    "mute": []
+  },
+  "vars": {
+    "from": [
+      {
+        "doc": "../novel.story.json",
+        "keys": "vars"
+      }
+    ]
+  },
+  "version": 2
+}

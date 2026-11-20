@@ -1,0 +1,174 @@
+{
+  "version": 1,
+  "title": "描き出しの場面",
+  "note": "make render SHOT=<name> と make render-all（gallery/<name>.png）の場面と並び。実機でも START=shot:<name> で同じ World から開く。node = 開くノード、say = そのノードの何番目（0 から）の台詞を出し終えた所、until: \"choices\" = 選択肢が出るまで送った所（どちらも無ければノードの頭）。vars = シナリオの変数（$ を付けない名前 → 値）。open = 開く画面（title・log・save・load・settings・ask・credits・hold）。pointer = マウスの位置（design px）。at = 時計を据える秒。縦の画面・小さい画面・Doc を差し替える場面は src/render/SceneRender.flix がここの名前を引いて作る。node は bin/fge yarn build がシナリオにあるかを見る。slots = save・load の画面の場面で 1 ページ目の上の枠から書いておくセーブ（node の say 番目の台詞を出し終えた所・say を省けば 0。ノードがあるかはテストの testEveryShotBuildsFromTheApp が見る）。",
+  "shots": [
+    {
+      "name": "title",
+      "open": "title",
+      "at": 3.0
+    },
+    {
+      "name": "prologue",
+      "node": "Prologue",
+      "at": 4.3
+    },
+    {
+      "name": "nvl",
+      "node": "Friday",
+      "say": 0,
+      "at": 4.0
+    },
+    {
+      "name": "adv",
+      "node": "Friday",
+      "say": 40,
+      "at": 4.0
+    },
+    {
+      "name": "message",
+      "node": "Friday",
+      "say": 4,
+      "at": 4.0
+    },
+    {
+      "name": "house",
+      "node": "Friday",
+      "say": 13,
+      "at": 4.0
+    },
+    {
+      "name": "hallway",
+      "node": "Friday",
+      "say": 24,
+      "at": 4.0
+    },
+    {
+      "name": "choice",
+      "node": "Friday",
+      "say": 51,
+      "at": 4.0
+    },
+    {
+      "name": "tape",
+      "node": "Tape",
+      "say": 30,
+      "at": 4.0
+    },
+    {
+      "name": "tape-corner",
+      "node": "Tape",
+      "say": 71,
+      "at": 9.0
+    },
+    {
+      "name": "static",
+      "node": "Tape",
+      "say": 79,
+      "at": 6.0
+    },
+    {
+      "name": "blue",
+      "node": "Tape",
+      "say": 79,
+      "at": 8.0
+    },
+    {
+      "name": "room",
+      "node": "Tape",
+      "say": 91,
+      "at": 4.0
+    },
+    {
+      "name": "eaves",
+      "node": "Park",
+      "say": 8,
+      "at": 4.0
+    },
+    {
+      "name": "camera",
+      "node": "Park",
+      "say": 59,
+      "at": 6.0
+    },
+    {
+      "name": "camplay",
+      "node": "Park",
+      "say": 113,
+      "at": 4.0
+    },
+    {
+      "name": "ending",
+      "node": "Park",
+      "say": 148,
+      "at": 4.0
+    },
+    {
+      "name": "hold",
+      "node": "Friday",
+      "say": 7,
+      "open": "hold",
+      "at": 4.0
+    },
+    {
+      "name": "sota",
+      "node": "Park",
+      "say": 19,
+      "at": 4.0
+    },
+    {
+      "name": "log",
+      "open": "log",
+      "pointer": [
+        400.0,
+        300.0
+      ],
+      "at": 4.0
+    },
+    {
+      "name": "save",
+      "node": "Friday",
+      "say": 20,
+      "open": "save",
+      "at": 4.0
+    },
+    {
+      "name": "load",
+      "open": "load",
+      "at": 4.0
+    },
+    {
+      "name": "settings",
+      "node": "Friday",
+      "say": 20,
+      "open": "settings",
+      "at": 1.2
+    },
+    {
+      "name": "ask",
+      "node": "Friday",
+      "say": 20,
+      "open": "ask",
+      "at": 4.0
+    },
+    {
+      "name": "credits",
+      "open": "credits",
+      "at": 12.0
+    }
+  ],
+  "slots": [
+    {
+      "node": "Friday",
+      "say": 20
+    },
+    {
+      "node": "Tape",
+      "say": 36
+    },
+    {
+      "node": "Park",
+      "say": 8
+    }
+  ]
+}

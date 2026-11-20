@@ -1,0 +1,372 @@
+{
+  "version": 1,
+  "title": "よその子",
+  "designWidth": 540,
+  "designHeight": 1170,
+  "windowWidth": 360,
+  "windowHeight": 780,
+  "clearColor": {
+    "r": 0.04,
+    "g": 0.05,
+    "b": 0.08
+  },
+  "maxDeltaTime": 0.05,
+  "// textures": "背景の写真（作り方と出典は CREDITS.md）。名前は assets/novel.backdrops.json の photos の texture と対。立ち絵と小物は cast_<名前>_<表情> の名前（assets/novel.cast.json の cast・props と faces）。cast__sample_plain はテスト用の立ち絵（art/cast/sample.py が作る単色の形・描き出しとテストだけが CastDoc.sample で使い、物語には出さない）。",
+  "textures": [
+    {
+      "name": "bg_my_room",
+      "path": "assets/bg/my_room_tall.jpg",
+      "hasAlpha": false
+    },
+    {
+      "name": "bg_house_ext",
+      "path": "assets/bg/house_ext_tall.jpg",
+      "hasAlpha": false
+    },
+    {
+      "name": "bg_hallway",
+      "path": "assets/bg/hallway_tall.jpg",
+      "hasAlpha": false
+    },
+    {
+      "name": "bg_sudo_room",
+      "path": "assets/bg/sudo_room_tall.jpg",
+      "hasAlpha": false
+    },
+    {
+      "name": "bg_tape_yard",
+      "path": "assets/bg/tape_yard_tall.jpg",
+      "hasAlpha": false
+    },
+    {
+      "name": "bg_park",
+      "path": "assets/bg/park_tall.jpg",
+      "hasAlpha": false
+    },
+    {
+      "name": "bg_park_slide",
+      "path": "assets/bg/park_slide_tall.jpg",
+      "hasAlpha": false
+    },
+    {
+      "name": "bg_park_sand",
+      "path": "assets/bg/park_sand_tall.jpg",
+      "hasAlpha": false
+    },
+    {
+      "name": "bg_park_bench",
+      "path": "assets/bg/park_bench_tall.jpg",
+      "hasAlpha": false
+    },
+    {
+      "name": "bg_park_entrance",
+      "path": "assets/bg/park_entrance_tall.jpg",
+      "hasAlpha": false
+    },
+    {
+      "name": "cast__sample_plain",
+      "path": "assets/cast/_sample_plain.png",
+      "hasAlpha": true
+    }
+  ],
+  "// glyphs": "起動時に焼く字。used = ソースとアセットにある字を先に焼く（シナリオの字がそろってからタイトル画面が出る）",
+  "glyphs": "used",
+  "fonts": [
+    {
+      "name": "default",
+      "path": "assets/ShipporiMincho-Regular.subset.ttf",
+      "fontSize": 32.0
+    },
+    {
+      "name": "gothic_bold",
+      "path": "assets/MPLUS1p-Bold.subset.ttf",
+      "fontSize": 32.0
+    }
+  ],
+  "sounds": [
+    {
+      "name": "ui_page",
+      "path": "assets/sfx/ui_page.wav",
+      "looping": false
+    },
+    {
+      "name": "ui_cursor",
+      "path": "assets/sfx/ui_cursor.wav",
+      "looping": false
+    },
+    {
+      "name": "ui_choice",
+      "path": "assets/sfx/ui_choice.wav",
+      "looping": false
+    },
+    {
+      "name": "ui_open",
+      "path": "assets/sfx/ui_open.wav",
+      "looping": false
+    },
+    {
+      "name": "ui_save",
+      "path": "assets/sfx/ui_save.wav",
+      "looping": false
+    },
+    {
+      "name": "bgm_daily",
+      "path": "assets/bgm/bgm_daily.wav",
+      "looping": true
+    },
+    {
+      "name": "se_intercom",
+      "path": "assets/sfx/se_intercom.wav",
+      "looping": false
+    },
+    {
+      "name": "se_door_open",
+      "path": "assets/sfx/se_door_open.wav",
+      "looping": false
+    },
+    {
+      "name": "se_door_close",
+      "path": "assets/sfx/se_door_close.wav",
+      "looping": false
+    },
+    {
+      "name": "se_tape_insert",
+      "path": "assets/sfx/se_tape_insert.wav",
+      "looping": false
+    },
+    {
+      "name": "se_deck_load",
+      "path": "assets/sfx/se_deck_load.wav",
+      "looping": false
+    },
+    {
+      "name": "amb_deck_run",
+      "path": "assets/sfx/amb_deck_run.wav",
+      "looping": true
+    },
+    {
+      "name": "amb_tape_hiss",
+      "path": "assets/sfx/amb_tape_hiss.wav",
+      "looping": true
+    },
+    {
+      "name": "amb_sportsday",
+      "path": "assets/sfx/amb_sportsday.wav",
+      "looping": true
+    },
+    {
+      "name": "amb_sportsday_warped",
+      "path": "assets/sfx/amb_sportsday_warped.wav",
+      "looping": true
+    },
+    {
+      "name": "se_pistol_far",
+      "path": "assets/sfx/se_pistol_far.wav",
+      "looping": false
+    },
+    {
+      "name": "se_tape_cut",
+      "path": "assets/sfx/se_tape_cut.wav",
+      "looping": false
+    },
+    {
+      "name": "se_static",
+      "path": "assets/sfx/se_static.wav",
+      "looping": false
+    },
+    {
+      "name": "bgm_quiet",
+      "path": "assets/bgm/bgm_quiet.wav",
+      "looping": true
+    },
+    {
+      "name": "amb_park",
+      "path": "assets/sfx/amb_park.wav",
+      "looping": true
+    },
+    {
+      "name": "bgm_daily_calm",
+      "path": "assets/bgm/bgm_daily_calm.wav",
+      "looping": true
+    }
+  ],
+  "editor": {
+    "resources": [
+      {
+        "id": "story",
+        "pattern": "assets/novel.story.json",
+        "title": "画面の言葉（タイトル画面・ボタン・セーブ）と話し手の呼び名",
+        "role": "material",
+        "schema": "assets/story.schema.json"
+      },
+      {
+        "id": "backdrops",
+        "pattern": "assets/novel.backdrops.json",
+        "title": "背景の写真と時間帯の色（ぼかし・夕暮れ・夜・朝）",
+        "role": "material",
+        "schema": "assets/backdrops.schema.json"
+      },
+      {
+        "id": "theme",
+        "pattern": "assets/novel.theme.json",
+        "title": "字・ウィンドウの色と待ちの印",
+        "role": "material",
+        "schema": "assets/theme.schema.json"
+      },
+      {
+        "id": "credits",
+        "pattern": "assets/novel.credits.json",
+        "title": "クレジット（絵と音とフォントの出典）",
+        "role": "material",
+        "schema": "assets/credits.schema.json"
+      },
+      {
+        "id": "kind",
+        "pattern": "assets/novel.kind.json",
+        "title": "手触り（字の大きさ・オート・スキップ・揺れ・蛍・雪）",
+        "role": "tuning",
+        "schema": "assets/kind.schema.json"
+      },
+      {
+        "id": "keys",
+        "pattern": "assets/novel.keys.json",
+        "title": "操作（キーの割り当て）",
+        "role": "tuning",
+        "schema": "assets/keys.schema.json"
+      },
+      {
+        "id": "small",
+        "pattern": "assets/novel.small.json",
+        "title": "小さい画面の字とボタンの大きさ",
+        "role": "tuning",
+        "schema": "assets/small.schema.json"
+      },
+      {
+        "id": "portrait",
+        "pattern": "assets/novel.portrait.json",
+        "title": "縦の画面の字とボタンの大きさ",
+        "role": "tuning",
+        "schema": "assets/portrait.schema.json"
+      },
+      {
+        "id": "rail",
+        "pattern": "assets/novel.rail.json",
+        "title": "縦の画面の操作の列",
+        "role": "tuning",
+        "schema": "assets/rail.schema.json"
+      },
+      {
+        "id": "cast",
+        "pattern": "assets/novel.cast.json",
+        "title": "立ち絵と小物",
+        "role": "material",
+        "schema": "assets/cast.schema.json"
+      },
+      {
+        "id": "shots",
+        "pattern": "assets/novel.shots.json",
+        "title": "描き出しの場面（make render の SHOT とギャラリーの並び）",
+        "role": "tuning",
+        "schema": "assets/shots.schema.json"
+      },
+      {
+        "id": "mixer",
+        "pattern": "assets/novel.mixer.json",
+        "title": "音の通り道（環境音と効果音のバス）",
+        "role": "tuning",
+        "schema": "assets/mixer.schema.json"
+      },
+      {
+        "id": "effects",
+        "pattern": "assets/novel.effects.json",
+        "title": "画面の粒の演出（蛍・雪の層の数と一度だけ出す秒）",
+        "role": "tuning",
+        "schema": "assets/effects.schema.json"
+      },
+      {
+        "id": "prompts",
+        "pattern": "assets/novel.prompts.json",
+        "title": "入力の案内（払い・タップで選ぶ選択肢の矢印・絵・当たる物）",
+        "role": "material",
+        "schema": "assets/prompts.schema.json"
+      },
+      {
+        "id": "project",
+        "pattern": "project.json",
+        "schema": "project.schema.json",
+        "title": "ゲームの題・画面",
+        "role": "tuning"
+      },
+      {
+        "id": "tape",
+        "pattern": "assets/novel.tape.json",
+        "title": "ホームビデオ・ビデオカメラ・メッセージアプリの窓・砂嵐",
+        "role": "material",
+        "schema": "assets/tape.schema.json"
+      }
+    ]
+  },
+  "web": {
+    "startPrompt": "タッチして開始",
+    "compress": {
+      "lossyImages": [
+        {
+          "glob": "assets/bg/*.jpg",
+          "quality": 85
+        }
+      ]
+    },
+    "embed": [
+      "assets/talk/dialogue.json"
+    ],
+    "omit": [
+      "assets/talk/*.yarn",
+      "assets/*.schema.json"
+    ],
+    "// deferred": "押して始めた後に裏で取る素材（シナリオで出てくる順）。タイトルの写真（sudo_room）と環境音（tape_hiss）、タイトルで鳴る返事の音は起動時に取る。届く前に使う所は暗転で待つ（背景・環境音）か、鳴らさずに進む（一発の音）。",
+    "deferred": [
+      "assets/bg/my_room_tall.jpg",
+      "assets/bg/house_ext_tall.jpg",
+      "assets/bg/hallway_tall.jpg",
+      "assets/bg/tape_yard_tall.jpg",
+      "assets/bg/park_tall.jpg",
+      "assets/bg/park_slide_tall.jpg",
+      "assets/bg/park_sand_tall.jpg",
+      "assets/bg/park_bench_tall.jpg",
+      "assets/bg/park_entrance_tall.jpg",
+      "assets/sfx/ui_page.wav",
+      "assets/sfx/ui_choice.wav",
+      "assets/bgm/bgm_daily.wav",
+      "assets/sfx/se_intercom.wav",
+      "assets/sfx/se_door_open.wav",
+      "assets/sfx/se_door_close.wav",
+      "assets/sfx/se_tape_insert.wav",
+      "assets/sfx/se_deck_load.wav",
+      "assets/sfx/amb_deck_run.wav",
+      "assets/sfx/amb_sportsday.wav",
+      "assets/sfx/amb_sportsday_warped.wav",
+      "assets/sfx/se_pistol_far.wav",
+      "assets/sfx/se_tape_cut.wav",
+      "assets/sfx/se_static.wav",
+      "assets/bgm/bgm_quiet.wav",
+      "assets/sfx/amb_park.wav",
+      "assets/bgm/bgm_daily_calm.wav"
+    ],
+    "// deferredFonts": "押して始めた後に取るフォント。タイトルは明朝（default）だけで出すので、ホームビデオとビデオカメラの英数字のゴシック体は後で取る。届くまでは明朝で出し、はじめからで届いていなければ暗転で待つ（WorldRead.holdIfMissing）。",
+    "deferredFonts": [
+      "gothic_bold"
+    ],
+    "keysDoc": "assets/novel.keys.json",
+    "touchGestures": {
+      "longPress": "touchHold",
+      "swipeLeft": "rollback",
+      "swipeUp": "flickUp",
+      "swipeDown": "flickDown"
+    },
+    "orientation": "any",
+    "portraitDesign": {
+      "width": 540,
+      "minHeight": 960
+    }
+  }
+}

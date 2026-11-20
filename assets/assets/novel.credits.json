@@ -1,0 +1,114 @@
+{
+  "version": 1,
+  "note": "クレジットに流す行（上から順）。style は heading（見出し）/ body（本文）/ small（出典の URL など）/ gap（空き）。絵の作り方・音の出典・フォント（SIL OFL）の表記は CREDITS.md と同じ物を置く。",
+  "rows": [
+    {
+      "text": "よその子",
+      "style": "heading"
+    },
+    {
+      "text": "",
+      "style": "gap"
+    },
+    {
+      "text": "シナリオ",
+      "style": "heading"
+    },
+    {
+      "text": "藻屑",
+      "style": "body"
+    },
+    {
+      "text": "",
+      "style": "gap"
+    },
+    {
+      "text": "絵",
+      "style": "heading"
+    },
+    {
+      "text": "背景は、画像生成で作りました",
+      "style": "small"
+    },
+    {
+      "text": "",
+      "style": "gap"
+    },
+    {
+      "text": "フォント",
+      "style": "heading"
+    },
+    {
+      "text": "しっぽり明朝 — The Shippori Mincho Project Authors",
+      "style": "body"
+    },
+    {
+      "text": "M PLUS 1p — The M+ Project Authors",
+      "style": "body"
+    },
+    {
+      "text": "SIL Open Font License 1.1",
+      "style": "small"
+    },
+    {
+      "text": "",
+      "style": "gap"
+    },
+    {
+      "text": "音",
+      "style": "heading"
+    },
+    {
+      "text": "BGM — 甘茶の音楽工房",
+      "style": "body"
+    },
+    {
+      "text": "https://amachamusic.chagasi.com/",
+      "style": "small"
+    },
+    {
+      "text": "",
+      "style": "gap"
+    },
+    {
+      "text": "効果音・環境音 — 効果音ラボ",
+      "style": "body"
+    },
+    {
+      "text": "https://soundeffect-lab.info/",
+      "style": "small"
+    },
+    {
+      "text": "",
+      "style": "gap"
+    },
+    {
+      "text": "運動会の曲 — New Post Horn Galop",
+      "style": "body"
+    },
+    {
+      "text": "United States Navy Band・パブリックドメイン",
+      "style": "small"
+    },
+    {
+      "text": "",
+      "style": "gap"
+    },
+    {
+      "text": "一部の音は合成で作りました",
+      "style": "body"
+    },
+    {
+      "text": "",
+      "style": "gap"
+    },
+    {
+      "text": "作り",
+      "style": "heading"
+    },
+    {
+      "text": "flix_game_engine",
+      "style": "body"
+    }
+  ]
+}

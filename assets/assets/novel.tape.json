@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "title": "ホームビデオ・ビデオカメラ・メッセージアプリのウィンドウ・砂嵐",
+  "note": "このゲームの画面の飾り（src/game/TapeHud.flix が描く）。homeVideo = <<homevideo on>> の画面（rec = 左上で点滅する字・date = 右下の日付・recColor / dateColor = その色・blinkSeconds = 点滅の 1 周の秒・scanlines = 走査線の暗さ・noise = 白い粒子の濃さ・band = 上から下へ流れる横のノイズのバンドの濃さ・textSize = 字の大きさ px）、camcorder = <<camcorder rec|play>> の画面（rec = 録画中の字・recColor = 赤い丸の色・ink = 線と字の色・battery = 電池の残り 0〜1・textSize = 字の大きさ）、phone = メッセージアプリのウィンドウ（window = このウィンドウを出すメッセージ枠の型。novel.theme.json の windows の鍵で、place は center・align は center にする。card = ウィンドウの地・header = 名前のバー・bubble = 吹き出し・avatar = 頭文字の丸・ink = 名前の字・scrim = 後ろを沈める濃さ）、tapeOut = <<tapeout>>（staticSeconds = 砂嵐の秒・blueSeconds = 続く青画面の秒・blue = 青画面の色）。",
+  "homeVideo": {
+    "rec": "REC",
+    "date": "1996.10.13",
+    "recColor": "#ff3a2e",
+    "dateColor": "#ffb648",
+    "blinkSeconds": 1.0,
+    "scanlines": 0.22,
+    "noise": 0.12,
+    "band": 0.18,
+    "textSize": 26.0
+  },
+  "camcorder": {
+    "rec": "REC",
+    "recColor": "#ff3b30",
+    "ink": "#f4f6f8",
+    "battery": 0.7,
+    "textSize": 18.0
+  },
+  "phone": {
+    "window": "message",
+    "card": "#14171c",
+    "header": "#1f242b",
+    "bubble": "#2c323b",
+    "avatar": "#5b7a99",
+    "ink": "#eef1f4",
+    "scrim": 0.55
+  },
+  "tapeOut": {
+    "staticSeconds": 1.4,
+    "blueSeconds": 1.6,
+    "blue": "#1534c4"
+  }
+}
