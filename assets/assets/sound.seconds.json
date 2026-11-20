@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "//": "生成物（make sound-seconds）。鳴り続けない音の長さ（秒）。WAV を読めないブラウザ版で <<audio se 音 wait=true>> が待つ秒になる。手で書き換えない（WAV と食い違うと make test が止める）。",
+  "seconds": {
+    "se_deck_load": 3.0,
+    "se_door_close": 0.6900907029478458,
+    "se_door_open": 1.0080498866213152,
+    "se_intercom": 2.585124716553288,
+    "se_pistol_far": 2.6,
+    "se_static": 2.2,
+    "se_tape_cut": 0.9,
+    "se_tape_insert": 1.2,
+    "ui_choice": 1.6860997732426304,
+    "ui_cursor": 0.04,
+    "ui_open": 0.9268253968253968,
+    "ui_page": 0.14,
+    "ui_save": 2.4704308390022676
+  }
+}

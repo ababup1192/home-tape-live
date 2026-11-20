@@ -19,6 +19,7 @@
   "assets/novel.story.json",
   "assets/novel.tape.json",
   "assets/novel.theme.json",
+  "assets/sound.seconds.json",
   "assets/talk/vocab.json",
   "assets/talk/vocab.std.json",
   "font-atlas/default.fontatlas",
@@ -285,119 +286,119 @@
   },
   {
    "path": "assets/sfx/ui_page.wav",
-   "bytes": 2539,
+   "bytes": 2527,
    "names": [
     "ui_page"
    ]
   },
   {
    "path": "assets/sfx/ui_choice.wav",
-   "bytes": 29339,
+   "bytes": 29327,
    "names": [
     "ui_choice"
    ]
   },
   {
    "path": "assets/bgm/bgm_daily.wav",
-   "bytes": 1316953,
+   "bytes": 1316941,
    "names": [
     "bgm_daily"
    ]
   },
   {
    "path": "assets/sfx/se_intercom.wav",
-   "bytes": 18457,
+   "bytes": 18445,
    "names": [
     "se_intercom"
    ]
   },
   {
    "path": "assets/sfx/se_door_open.wav",
-   "bytes": 6613,
+   "bytes": 6601,
    "names": [
     "se_door_open"
    ]
   },
   {
    "path": "assets/sfx/se_door_close.wav",
-   "bytes": 4538,
+   "bytes": 4526,
    "names": [
     "se_door_close"
    ]
   },
   {
    "path": "assets/sfx/se_tape_insert.wav",
-   "bytes": 6579,
+   "bytes": 6567,
    "names": [
     "se_tape_insert"
    ]
   },
   {
    "path": "assets/sfx/se_deck_load.wav",
-   "bytes": 18326,
+   "bytes": 18314,
    "names": [
     "se_deck_load"
    ]
   },
   {
    "path": "assets/sfx/amb_deck_run.wav",
-   "bytes": 50669,
+   "bytes": 50657,
    "names": [
     "amb_deck_run"
    ]
   },
   {
    "path": "assets/sfx/amb_sportsday.wav",
-   "bytes": 381752,
+   "bytes": 381740,
    "names": [
     "amb_sportsday"
    ]
   },
   {
    "path": "assets/sfx/amb_sportsday_warped.wav",
-   "bytes": 396283,
+   "bytes": 396271,
    "names": [
     "amb_sportsday_warped"
    ]
   },
   {
    "path": "assets/sfx/se_pistol_far.wav",
-   "bytes": 11571,
+   "bytes": 11559,
    "names": [
     "se_pistol_far"
    ]
   },
   {
    "path": "assets/sfx/se_tape_cut.wav",
-   "bytes": 4213,
+   "bytes": 4201,
    "names": [
     "se_tape_cut"
    ]
   },
   {
    "path": "assets/sfx/se_static.wav",
-   "bytes": 13849,
+   "bytes": 13837,
    "names": [
     "se_static"
    ]
   },
   {
    "path": "assets/bgm/bgm_quiet.wav",
-   "bytes": 1363676,
+   "bytes": 1363664,
    "names": [
     "bgm_quiet"
    ]
   },
   {
    "path": "assets/sfx/amb_park.wav",
-   "bytes": 256937,
+   "bytes": 256925,
    "names": [
     "amb_park"
    ]
   },
   {
    "path": "assets/bgm/bgm_daily_calm.wav",
-   "bytes": 1276382,
+   "bytes": 1276370,
    "names": [
     "bgm_daily_calm"
    ]
@@ -420,10 +421,10 @@
  },
  "wasmBrotli": "classes.wasm.br",
  "boot": {
-  "assets": 1155938,
-  "assetsWire": 1054473,
-  "wasm": 1445261,
-  "wasmWire": 1513532
+  "assets": 1156579,
+  "assetsWire": 1054914,
+  "wasm": 1446820,
+  "wasmWire": 1515091
  },
  "serviceWorker": true
 }
